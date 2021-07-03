@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon/rocket.png">
+  <title>Классный проект</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+  <main class="main">
+    <header class="header">
+      <div class="container">
+        <nav class="menu-nav">
+          <div class="menu-nav__inner">
+            <div class="burger-wrap">
+              <button class="burger" type="button">
+                <span class="burger__item"></span>
+                <span class="sr-only">
+                  дополнительное меню
+                </span>
+              </button>
+            </div>
+            <a class="logo" href="#">
+              <img data-src="img/icon/logo.png" src="img/content/1x1.gif" alt="logotype">
+            </a>
+          </div>
+          <div class="menu-nav__wrapper">
+            <span class="menu__span">Меню</span>
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link" data-goto=".about" href="#">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-goto=".price" href="#">Тарифы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-goto=".reviews" href="#">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-goto=".question" href="#">Q&A</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" data-goto=".contact" href="#">Обратная связь</a>
+              </li>
+            </ul>
+            <ul class="menu-nav__list lang">
+              <li class="menu-nav__lang">
+                <span>Ru</span>
+              </li>
+              <li class="menu-nav__lang">
+                <a class="menu-nav__link" href="#">En</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-nav__wrap">
+            <ul class="menu-nav__list">
+              <li class="menu-nav__lang">
+                <span>Ru</span>
+              </li>
+              <li class="menu-nav__lang">
+                <a class="menu-nav__link" href="#">En</a>
+              </li>
+            </ul>
+            <a class="menu-nav__btn" href="#">
+              Вход и регистрация
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="popup"></div>
+    </header>
+
+    <section class="blog">
+      <div class="blog__inner">
+        <div class="container">
+          <div class="blog__wrapper">
+            <div class="blog__wrap">
+              <h1 class="blog__title" data-aos="fade-up" data-aos-duration="1300">
+                Высокий уровень вовлечения представителей
+              </h1>
+              <form class="blog__form email" data-aos="fade-right" data-aos-duration="1200">
+                <label class="blog__label email__label">
+                  <input class="blog__input email__input" type="email" placeholder="Введите свой e-mail">
+                </label>
+                <button class="blog__btn email__btn" type="submit">Отправить</button>
+              </form>
+              <div class="blog__text" data-aos="fade-zoom-in" data-aos-duration="1200">
+                <p>
+                  Нажимая на кнопку вы соглашаетесь на обработку
+                  <a href="#" class="accent">
+                    персональных данных
+                  </a>
+                </p>
+              </div>
+              <span class="blog__tip">
+                Листайте дальше
+              </span>
+            </div>
+            <div class="blog__img" id="scene">
+              <svg class="blog__svg" data-depth="1">
+                <use xlink:href="img/sprite.svg#23"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog__box">
+        <div class="container">
+          <h2 class="blog__subtitle title" data-aos="fade-right" data-aos-duration="1200">
+            Наши преимущества
+          </h2>
+          <ul class="blog__list">
+            <li class="blog__item" data-aos="zoom-in" data-aos-duration="1300">
+              <div class="blog__item-inner">
+                <h3 class="blog__caption blog__caption--first">Легко и просто</h3>
+              </div>
+              <div class="blog__desc">
+                <p>
+                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+                  осмысленного
+                  текста рыбы на русском языке
+                </p>
+              </div>
+            </li>
+            <li class="blog__item" data-aos="zoom-in" data-aos-duration="1300">
+              <div class="blog__item-inner">
+                <h3 class="blog__caption blog__caption--two">Быстро и доступно</h3>
+              </div>
+              <div class="blog__desc">
+                <p>
+                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+                  осмысленного
+                  текста рыбы на русском языке
+                </p>
+              </div>
+            </li>
+            <li class="blog__item" data-aos="zoom-in" data-aos-duration="1300">
+              <div class="blog__item-inner">
+                <h3 class="blog__caption blog__caption--last">А главное, качественно</h3>
+              </div>
+              <div class="blog__desc">
+                <p>
+                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+                  осмысленного
+                  текста рыбы на русском языке
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title title" data-aos="fade-right" data-aos-duration="1200">Как мы работаем</h2>
+        <div class="about__inner">
+          <div class="about__img" data-aos="fade-right" data-aos-duration="1200">
+            <img data-src="img/content/bg3.png" src="img/content/1x1.gif" alt="смартфоны социальные сети">
+          </div>
+          <div class="about__wrap" data-aos="fade-left" data-aos-duration="1200">
+            <ul class="about__list">
+              <li class="about__item">Первый этап</li>
+              <li class="about__item">Второй этап</li>
+              <li class="about__item">Третий это</li>
+            </ul>
+            <h3 class="about__subtitle">
+              Значимость этих проблем настолько очевидна
+            </h3>
+            <div class="about__desc">
+              <p>
+                Разнообразный и богатый опыт
+              </p>
+            </div>
+            <div class="about__text">
+              <p>
+                Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной
+                степени
+                обуславливает создание существенных финансовых и административных условий. Идейные соображения высшего
+                порядка, а также
+                начало повседневной работы по формированию позиции играет важную роль в формировании дальнейших
+                направлений развития.
+              </p>
+              <p>
+                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет
+                выполнять важные задания
+                по разработке системы обучения кадров, соответствует насущным потребностям.
+              </p>
+            </div>
+            <a class="about__link" href="#">Забронировать звонок</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="container">
+        <h2 class="price__title title" data-aos="fade-right" data-aos-duration="1200">
+          Наши тарифы
+        </h2>
+        <ul class="price__items">
+          <li class="price__item" data-aos="flip-left" data-aos-duration="1300">
+            <div class="price__wrapper">
+              <div class="price__wrap">
+                <h3 class="price__heading">
+                  Эконом
+                </h3>
+                <div class="price__subtitle">
+                  2 990 руб<span>/месяц</span>
+                </div>
+              </div>
+              <div class="price__inner">
+                <ul class="price__list">
+                  <li class="price__li price__li--plus">Товарищи! начало повседневной работы по формированию позиции
+                    требуют от нас анализа систем массового участия</li>
+                  <li class="price__li price__li--minus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--minus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--minus">Не следует, однако забывать, что постоянное</li>
+                </ul>
+              </div>
+            </div>
+            <a class="price__link" href="#">Узнать подробнее</a>
+          </li>
+          <li class="price__item" data-aos="flip-left" data-aos-duration="1300">
+            <div class="price__wrapper">
+              <div class="price__wrap">
+                <h3 class="price__heading">
+                  Стандарт
+                </h3>
+                <div class="price__subtitle">
+                  4 990 руб<span>/месяц</span>
+                </div>
+              </div>
+              <div class="price__inner">
+                <ul class="price__list">
+                  <li class="price__li price__li--plus">Товарищи! начало повседневной работы по формированию позиции
+                    требуют от нас анализа систем массового участия</li>
+                  <li class="price__li price__li--plus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--minus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--minus">Не следует, однако забывать, что постоянное</li>
+                </ul>
+              </div>
+            </div>
+            <a class="price__link" href="#">Узнать подробнее</a>
+          </li>
+          <li class="price__item" data-aos="flip-left" data-aos-duration="1300">
+            <div class="price__wrapper">
+              <div class="price__wrap">
+                <h3 class="price__heading">
+                  Экстра
+                </h3>
+                <div class="price__subtitle">
+                  8 990 руб<span>/месяц</span>
+                </div>
+              </div>
+              <div class="price__inner">
+                <ul class="price__list">
+                  <li class="price__li price__li--plus">Товарищи! начало повседневной работы по формированию позиции
+                    требуют от нас анализа систем массового участия</li>
+                  <li class="price__li price__li--plus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--plus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--minus">Не следует, однако забывать, что постоянное</li>
+                </ul>
+              </div>
+            </div>
+            <a class="price__link" href="#">Узнать подробнее</a>
+          </li>
+          <li class="price__item" data-aos="flip-left" data-aos-duration="1300">
+            <div class="price__wrapper">
+              <div class="price__wrap">
+                <h3 class="price__heading">
+                  Премиальный
+                </h3>
+                <div class="price__subtitle">
+                  12 990 руб<span>/месяц</span>
+                </div>
+              </div>
+              <div class="price__inner">
+                <ul class="price__list">
+                  <li class="price__li price__li--plus">Товарищи! начало повседневной работы по формированию позиции
+                    требуют от нас анализа систем массового участия</li>
+                  <li class="price__li price__li--plus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--plus">Не следует, однако забывать, что постоянное</li>
+                  <li class="price__li price__li--plus">Не следует, однако забывать, что постоянное</li>
+                </ul>
+              </div>
+            </div>
+            <a class="price__link" href="#">Узнать подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="reviews__title title" data-aos="fade-right" data-aos-duration="1200">Отзывы</h2>
+      <div class="container">
+        <ul class="reviews__list">
+          <li class="reviews__item reviews__item--first" data-aos="zoom-out" data-aos-duration="1200">
+            <div class="reviews__wrap">
+              <div class="reviews__inner">
+                <div class="reviews__img">
+                  <img data-src="img/content/person1.jpg" src="img/content/1x1.gif" alt="Картинка человека с бородой">
+                </div>
+                <div class="reviews__name">Александр</div>
+              </div>
+              <time class="reviews__time" datetime="2021-06-03">03.06.2021</time>
+            </div>
+            <div class="reviews__text">
+              <p>
+                Равным образом консультация с широким активом требуют от нас анализа существенных финансовых и
+                административных условий.
+                Равным образом рамки и место обучения кадров позволяет оценить
+              </p>
+            </div>
+            <div class="star" data-rateyo-rating="5"></div>
+          </li>
+          <li class="reviews__item reviews__item--two" data-aos="zoom-out" data-aos-duration="1200">
+            <div class="reviews__wrap">
+              <div class="reviews__inner">
+                <div class="reviews__img">
+                  <img data-src="img/content/person2.jpg" src="img/content/1x1.gif" alt="картинка пожилого человека">
+                </div>
+                <div class="reviews__name">Алексей</div>
+              </div>
+              <time class="reviews__time" datetime="2021-06-03">03.06.2021</time>
+            </div>
+            <div class="reviews__text">
+              <p>
+                Равным образом консультация с широким активом требуют от нас анализа существенных финансовых и
+                административных условий.
+                Равным образом рамки и место обучения кадров позволяет оценить
+              </p>
+            </div>
+            <div class="star" data-rateyo-rating="3"></div>
+          </li>
+          <li class="reviews__item reviews__item--three" data-aos="zoom-out" data-aos-duration="1200">
+            <div class="reviews__wrap">
+              <div class="reviews__inner">
+                <div class="reviews__img">
+                  <img data-src="img/content/persen3.jpg" src="img/content/1x1.gif" alt="картинка парня">
+                </div>
+                <div class="reviews__name">Сергей</div>
+              </div>
+              <time class="reviews__time" datetime="2021-06-03">03.06.2021</time>
+            </div>
+            <div class="reviews__text">
+              <p>
+                Равным образом консультация с широким активом требуют от нас анализа существенных финансовых и
+                административных условий.
+                Равным образом рамки и место обучения кадров позволяет оценить
+              </p>
+            </div>
+            <div class="star" data-rateyo-rating="4"></div>
+          </li>
+          <li class="reviews__item reviews__item--four" data-aos="zoom-out" data-aos-duration="1200">
+            <div class="reviews__wrap">
+              <div class="reviews__inner">
+                <div class="reviews__img">
+                  <img data-src="img/content/person4.jpg" src="img/content/1x1.gif" alt="картинка девушки">
+                </div>
+                <div class="reviews__name">Софья</div>
+              </div>
+              <time class="reviews__time" datetime="2021-06-03">03.06.2021</time>
+            </div>
+            <div class="reviews__text">
+              <p>
+                Равным образом консультация с широким активом требуют от нас анализа существенных финансовых и
+                административных условий.
+                Равным образом рамки и место обучения кадров позволяет оценить
+              </p>
+            </div>
+            <div class="star" data-rateyo-rating="5"></div>
+          </li>
+        </ul>
+        <button class="reviews__link" data-aos="zoom-in" data-aos-duration="1200">
+          <span class="reviews__link-normal">Структурировать</span>
+          <span class="reviews__link-active">Деструктурировать</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="container">
+        <div class="feedback__wrapper">
+          <div class="feedback__img" data-aos="fade-right" data-aos-duration="1200">
+            <img data-src="img/content/bg2.png" src="img/content/1x1.gif" alt="изображение курьера">
+          </div>
+          <div class="feedback__wrap" data-aos="fade-left" data-aos-duration="1200">
+            <h2 class="feedback__title">
+              Получите самую выгодную цену
+              на планете
+            </h2>
+            <form class="feedback__form email">
+              <label class="feedback__label email__label">
+                <input class="feedback__input email__input" type="email" placeholder="Введите свой e-mail">
+              </label>
+              <button class="feedback__btn email__btn" type="submit">Отправить</button>
+            </form>
+            <div class="blog__text">
+              <p>
+                Нажимая на кнопку вы соглашаетесь на обработку
+                <a class="accent" href="#">
+                  персональных данных
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="container">
+        <h2 class="question__title title" data-aos="fade-right" data-aos-duration="1200">
+          Часто задаваемые вопросы
+        </h2>
+        <ul class="question__items">
+          <li class="question__item" data-aos="fade-right" data-aos-duration="1200">
+            <button class="question__add">Первый вопрос</button>
+            <div class="question__text">
+              <p>
+                Повседневная практика показывает, что реализация намеченных плановых заданий способствует подготовки и
+                реализации систем
+                массового участия. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
+                влечет за собой
+                процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+              </p>
+            </div>
+          </li>
+          <li class="question__item" data-aos="fade-left" data-aos-duration="1200">
+            <button class="question__add">Второй вопрос</button>
+            <div class="question__text">
+              <p>
+                Повседневная практика показывает, что реализация намеченных плановых заданий способствует подготовки и
+                реализации систем
+                массового участия. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
+                влечет за собой
+                процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+              </p>
+            </div>
+          </li>
+          <li class="question__item" data-aos="fade-right" data-aos-duration="1200">
+            <button class="question__add">Третий вопрос</button>
+            <div class="question__text">
+              <p>
+                Повседневная практика показывает, что реализация намеченных плановых заданий способствует подготовки и
+                реализации систем
+                массового участия. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
+                влечет за собой
+                процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+              </p>
+            </div>
+          </li>
+          <li class="question__item" data-aos="fade-left" data-aos-duration="1200">
+            <button class="question__add">Четвертый вопрос</button>
+            <div class="question__text">
+              <p>
+                Повседневная практика показывает, что реализация намеченных плановых заданий способствует подготовки и
+                реализации систем
+                массового участия. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий
+                влечет за собой
+                процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__inner" data-aos="fade-right" data-aos-duration="1200">
+            <h2 class="contact__title title">
+              Обратная связь
+            </h2>
+            <div class="contact__text">
+              <p>
+                Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас целевой
+                аудитории
+                за месяц с
+                минимальными усилиями с вашей стороны
+              </p>
+            </div>
+            <form class="contact__form">
+              <label class="contact__label">
+                <input class="contact__input" type="email" placeholder="Введите свой e-mail">
+              </label>
+              <label class="contact__label">
+                <input class="contact__input" type="tel" placeholder="Номер мобильного телефона">
+              </label>
+              <label class="contact__label">
+                <input class="contact__input" type="text" placeholder="Никнейм в Instagram">
+              </label>
+              <label class="contact__label">
+                <textarea class="contact__textarea"
+                  placeholder="Что вы бы хотели спросить о росте в Instagram"></textarea>
+              </label>
+              <div class="contact__wrap">
+                <button class="contact__btn" type="submit">
+                  Отправить заявку
+                </button>
+                <div class="contact__desc">
+                  <p>
+                    Нажимая на кнопку вы соглашаетесь на обработку
+                    <a href="#" class="accent">персональных данных</a>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact__img" data-aos="fade-left" data-aos-duration="1200">
+            <img data-src="img/content/bg4.png" src="img/content/1x1.gif" alt="изображение компьютера">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__inner">
+            <span class="footer__subtitle">Инстаботы</span>
+            <span class="footer__text">© 2021 Copyright reserved
+              Instabots</span>
+          </div>
+          <a class="footer__link" data-goto=".header" href="#">Вернуться наверх</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
